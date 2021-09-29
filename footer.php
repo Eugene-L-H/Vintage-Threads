@@ -3,13 +3,14 @@
 ?>
 
 <footer>
-  <ul>
-    <li>Home</li>
-    <li>About Us</li>
-    <li>Shop</li>
-    <li>Login</li>
-  </ul>
-  <p class="copyright">Copyright&copy; Vintage Threads 2021</p>
+  <nav class="footer-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Shop</a></li>
+    </ul>
+  </nav>
+  <p class="copyright">Copyright&copy; <span class="emphasis">Vintage Threads</span> 2021</p>
 </footer>
 </body>
 

@@ -1,5 +1,6 @@
 <?php
-
+include('functions.php');
+$uri = $_SERVER['REQUEST_URI'];
 ?>
 
 <!DOCTYPE html>
@@ -20,19 +21,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&display=swap" rel="stylesheet">
-  <title>Style knows no time.</title>
+  <title><?php tab_page($uri); ?>&nbsp;Vintage Threads</title>
 </head>
 
 <header>
+  <h2>Vintage &nbsp;Threads</h2>
   <div class="main-nav">
     <nav>
-      <h2>Vintage &nbsp;Threads</h2>
       <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Shop</li>
-        <li>Login</li>
-        <li>Search</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Search</a></li>
       </ul>
     </nav>
   </div>
