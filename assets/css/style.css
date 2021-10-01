@@ -3,47 +3,68 @@
   padding: 0;
 }
 
-header {
-  width: 85%;
-  margin: 0 auto 0 auto;
-  background-color: rgb(0, 0, 0, 0.45);
-  padding-top: 0;
+body {
+  font-family: 'ABeeZee', sans-serif;
+  max-height: display;
+  max-width: display;
+}
+
+#body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: 100%;
 }
 
-body {
-  font-family: 'ABeeZee', sans-serif;
+header {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding-top: 0;
+  white-space: nowrap;
 }
 
 header h2 {
+  display: inline-block;
+  position: fixed;
+  max-height: 1.2em;
   font-family: 'Amatic SC', cursive;
   color: #ffeebb;
+  background-color: rgb(0, 0, 0, 0.45);
+  padding-right: 100%;
+  padding-left: 5%;
   font-size: 5em;
-  text-align: center;
+}
+
+.blackBar {
+  background-color: #000;
 }
 
 .main-nav {
-  /* display: flex; */
-  padding: 1em;
+  display: flex;
+  position: relative;
+}
+
+.main-nav nav {
+  margin: 3em;
+  margin: 0 10% 0 auto;
 }
 
 .main-nav ul {
-  /* display: inline; */
+  position: absolute;
+  z-index: 1;
   margin-left: auto;
   list-style-type: none;
   color: #ffeebb;
-  margin: 0;
+  margin-right: 10%;
   padding: 0;
 }
 
 .main-nav li {
+  z-index: 1;
   font-size: 1.4em;
-  float: right;
   padding: 0.35em;
 }
 
 .main-nav a {
-  display: inline-block;
   text-decoration: none;
   color: white;
 }
@@ -56,17 +77,48 @@ header h2 {
   transition: all 0.3s ease-out;
 }
 
+footer {
+  background-color: #e4e4a0;
+  color: #000;
+  margin-top: 10em;
+  padding-bottom: 1em;
+}
+
+.footer-nav {
+  padding: 1em;
+  margin-left: 75%;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: brown;
+}
+
+footer .text-box {
+  margin-left: 40%;
+}
+
+.copyright {
+  font-size: 0.9em;
+  color: dark-brown;
+  padding-bottom: 0.15em;
+}
+
+.copyright .emphasis {
+  color: #cc2222;
+}
+
+/* index.php */
 .homepage {
   background-image: url('../images/sortingClothes.jpg');
-  background-repeat: no-repeat;
-  background-attachement: fixed;
 }
 
 #intro {
+  max-height: 10em;
   width: 40%;
-  margin: 12em 0;
-  padding: 3em;
-  background-color: rgb(0, 40, 40, 0.95);
+  margin: 30em 0 10em 0;
+  padding: 1.5em;
+  background-color: rgb(0, 40, 40, 0.85);
   color: #eee;
 }
 
@@ -81,7 +133,7 @@ header h2 {
 
 #intro .text-box {
   margin-left: auto;
-  width: 60%;
+  width: 70%;
 }
 
 .heart-color {
@@ -91,45 +143,31 @@ header h2 {
 }
 
 .teal-div {
-  margin: 12em 0;
-  padding: 3em;
-  background-color: rgb(32, 178, 170, 0.5);
+  width: 75%;
+  margin-left: auto;
+  margin-top: 12em;
+  padding: 1.5em;
+  background-color: rgb(32, 178, 170, 0.7);
   color: #eee;
 }
 
 .teal-div h3 {
+  font-size: 1.5em;
+  text-decoration: underline;
   text-align: center;
 }
 
 .teal-div .text-box {
-  width: 75%;
-  margin: 0 auto 0 auto;
+  width: 85%;
+  margin-right: auto;
   columns: 6em 3;
 }
 
-.col {
+.teal-div .col {
+  padding: 0 0.5em 0 0.5em;
 }
 
-footer {
-  background-color: #e4e4a0;
-  background-color: rgb(244, 244, 176, 0.7);
-  color: #000;
-  margin-top: 1em;
-  padding: 1em;
-}
-
-.footer-nav {
-  padding: 1em;
-}
-
-.footer-nav a {
-  text-decoration: none;
-}
-
-.copyright {
-  color: dark-brown;
-}
-
-.copyright .emphasis {
-  color: #cc2222;
+/* about-us */
+.about-us {
+  background-image: url('../images/stackOfJeans.jpg');
 }

@@ -24,18 +24,20 @@ $uri = $_SERVER['REQUEST_URI'];
   <title><?php tab_page($uri); ?>&nbsp;Vintage Threads</title>
 </head>
 
-<header>
-  <h2>Vintage &nbsp;Threads</h2>
+<body id="body" class="<?php bodyClass($uri); ?>">
+  <header>
+    <h2>Vintage &nbsp;Threads</h2>
+  </header>
   <div class="main-nav">
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Search</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="about-us.php">About Us</a></li>
+        <li><a href="shop.php">Shop</a></li>
+        <li><a href="blog.php">Blog</a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="search.php">Search</a></li>
       </ul>
     </nav>
   </div>
-</header>
